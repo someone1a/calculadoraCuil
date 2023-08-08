@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Cuil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="centerTxt">Calculadora Cuil</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form>
+                <label for="dni">Ingrese su nro de documento</label><br>
+                <input type="number" name="dni" id="dni" placeholder="Ingrese los datos aqui" required><br>
+                <label for="gender">soy</label><br>
+                <input type="radio" name="gender" id="man"><span>Hombre</span>
+                <input type="radio" name="gender" id="woman"><span>Mujer</span>
+                <input type="radio" name="gender" id="buss"><span>Negocio</span><br>
+                <a onclick="cuilCalculate()">Calcular</a>
+                <div id="return"></div>
+            </form>
+
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

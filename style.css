@@ -1,0 +1,30 @@
+.form-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.form-container form {
+    border: solid  3px;
+    padding: 20px;
+    animation: infinite 5s bordersW alternate linear;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    max-width: 450px;
+    max-height: 450px;
+}
+.centerTxt{
+    text-align: center;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes bordersW {
+    0%{border-color: #5F4842;}
+    25%{border-color: #7AFDD6;}
+    50%{border-color: #F4B942;}
+    75%{border-color: #3B0086;}
+    100%{border-color: #02A9EA;}
+}
